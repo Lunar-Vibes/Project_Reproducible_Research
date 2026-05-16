@@ -1,0 +1,2219 @@
+{
+  "model_summary": [
+    {
+      "Dataset": "raw_allranks",
+      "OOB_MSE": 3.612214881900938,
+      "OOB_R2": 0.7468611665838154,
+      "N_Significant_p05": 0
+    },
+    {
+      "Dataset": "raw_bronze",
+      "OOB_MSE": 3.909717030989416,
+      "OOB_R2": 0.7924828705088189,
+      "N_Significant_p05": 0
+    },
+    {
+      "Dataset": "raw_gold",
+      "OOB_MSE": 3.530396498917311,
+      "OOB_R2": 0.7421933632586075,
+      "N_Significant_p05": 0
+    },
+    {
+      "Dataset": "raw_diamond",
+      "OOB_MSE": 3.659032601046512,
+      "OOB_R2": 0.7253103798056556,
+      "N_Significant_p05": 0
+    },
+    {
+      "Dataset": "raw_gc",
+      "OOB_MSE": 4.052708043719529,
+      "OOB_R2": 0.7130950294745108,
+      "N_Significant_p05": 0
+    },
+    {
+      "Dataset": "diff_allranks",
+      "OOB_MSE": 2.2959873193635953,
+      "OOB_R2": 0.8390670491318628,
+      "N_Significant_p05": 0
+    },
+    {
+      "Dataset": "diff_bronze",
+      "OOB_MSE": 2.9932989569709676,
+      "OOB_R2": 0.8409379507408925,
+      "N_Significant_p05": 0
+    },
+    {
+      "Dataset": "diff_gold",
+      "OOB_MSE": 2.4349421254488424,
+      "OOB_R2": 0.8221887427617782,
+      "N_Significant_p05": 0
+    },
+    {
+      "Dataset": "diff_diamond",
+      "OOB_MSE": 2.366678265867703,
+      "OOB_R2": 0.8223295540500309,
+      "N_Significant_p05": 0
+    },
+    {
+      "Dataset": "diff_gc",
+      "OOB_MSE": 2.6133315799509966,
+      "OOB_R2": 0.8149933792834894,
+      "N_Significant_p05": 0
+    }
+  ],
+  "feature_importance": [
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "shots.conceded.ag",
+      "PctIncMSE": 1850.2638749746022,
+      "PctIncMSE_SD": 12.271431444760687,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "percentage.behind.ball",
+      "PctIncMSE": 1102.8970254910791,
+      "PctIncMSE_SD": 3.9479848797893284,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "shots.ag",
+      "PctIncMSE": 852.4246459060732,
+      "PctIncMSE_SD": 6.003759863978474,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "saves.ag",
+      "PctIncMSE": 379.48017482990883,
+      "PctIncMSE_SD": 1.982038549026343,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "percentage.defensive.third",
+      "PctIncMSE": 92.71458031321129,
+      "PctIncMSE_SD": 0.14001442821690302,
+      "p_value": 0.2727272727272727,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "percentage.offensive.third",
+      "PctIncMSE": 89.66619052671095,
+      "PctIncMSE_SD": 0.6401975924133173,
+      "p_value": 0.2727272727272727,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "percentage.supersonic.speed",
+      "PctIncMSE": 46.30454494715776,
+      "PctIncMSE_SD": 0.008105563588739902,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "avg.boost.amount",
+      "PctIncMSE": 44.8432897506754,
+      "PctIncMSE_SD": 0.406231091489333,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "count.stolen.small.pads.ag",
+      "PctIncMSE": 43.22702392582598,
+      "PctIncMSE_SD": 0.1471833369749152,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "percentage.high.in.air",
+      "PctIncMSE": 40.17903711703643,
+      "PctIncMSE_SD": 0.1977113309671241,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "100.boost.time.ag",
+      "PctIncMSE": 38.90318526917879,
+      "PctIncMSE_SD": 0.15464829911228542,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "amount.stolen.ag",
+      "PctIncMSE": 35.635441334061674,
+      "PctIncMSE_SD": 0.04827643323836927,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "percentage.on.ground",
+      "PctIncMSE": 32.867852420006024,
+      "PctIncMSE_SD": 0.11009883171457509,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "0.boost.time.ag",
+      "PctIncMSE": 32.58294003382214,
+      "PctIncMSE_SD": 0.01936076083442992,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "demos.inflicted.ag",
+      "PctIncMSE": 31.476465509608598,
+      "PctIncMSE_SD": 0.17283509944036632,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "real.speed.ag",
+      "PctIncMSE": 31.132058579783912,
+      "PctIncMSE_SD": 0.2636943354818347,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "amount.collected.ag",
+      "PctIncMSE": 30.416553437900124,
+      "PctIncMSE_SD": 0.3785711117298489,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "true.wastage",
+      "PctIncMSE": 30.34310069125377,
+      "PctIncMSE_SD": 0.12541535824391076,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "count.powerslide.ag",
+      "PctIncMSE": 29.42440206146577,
+      "PctIncMSE_SD": 0.011044110680682194,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "amount.overfill.stolen.ag",
+      "PctIncMSE": 28.937430810008223,
+      "PctIncMSE_SD": 0.11847763868658269,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "amount.overfill.total.ag",
+      "PctIncMSE": 28.137442114251048,
+      "PctIncMSE_SD": 0.010072793079882764,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "count.stolen.big.pads.ag",
+      "PctIncMSE": 27.695438745709964,
+      "PctIncMSE_SD": 0.10419004198860486,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "count.collected.small.pads.ag",
+      "PctIncMSE": 27.518656863971753,
+      "PctIncMSE_SD": 0.21633738247883658,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "percentage.slow.speed",
+      "PctIncMSE": 26.393563549951992,
+      "PctIncMSE_SD": 0.12295568516212606,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "count.collected.big.pads.ag",
+      "PctIncMSE": 26.31070059506063,
+      "PctIncMSE_SD": 0.13683386967652247,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "demos.taken.ag",
+      "PctIncMSE": 23.576199598097077,
+      "PctIncMSE_SD": 0.03734505692862875,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "Boost.used.ag",
+      "PctIncMSE": 23.340362751647014,
+      "PctIncMSE_SD": 0.014765467811895992,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_allranks",
+      "Feature": "avg.powerslide.time",
+      "PctIncMSE": 19.161829967434794,
+      "PctIncMSE_SD": 0.019194278662913948,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "shots.conceded.ag",
+      "PctIncMSE": 1306.2921792958325,
+      "PctIncMSE_SD": 16.414213101058454,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "shots.ag",
+      "PctIncMSE": 1024.831578419172,
+      "PctIncMSE_SD": 3.892172041513388,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "percentage.behind.ball",
+      "PctIncMSE": 955.1780440832838,
+      "PctIncMSE_SD": 37.83636840572426,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "saves.ag",
+      "PctIncMSE": 138.2944577273008,
+      "PctIncMSE_SD": 1.3152659260061548,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "percentage.offensive.third",
+      "PctIncMSE": 106.71460471453169,
+      "PctIncMSE_SD": 2.597718166324096,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "percentage.defensive.third",
+      "PctIncMSE": 65.36404406172751,
+      "PctIncMSE_SD": 0.2583504231117576,
+      "p_value": 0.18181818181818182,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "percentage.high.in.air",
+      "PctIncMSE": 48.02708221850144,
+      "PctIncMSE_SD": 0.5976549136027248,
+      "p_value": 0.9090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "avg.boost.amount",
+      "PctIncMSE": 39.27082706791051,
+      "PctIncMSE_SD": 0.8370322675692485,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "100.boost.time.ag",
+      "PctIncMSE": 35.49589407362894,
+      "PctIncMSE_SD": 1.2555142925508425,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "amount.stolen.ag",
+      "PctIncMSE": 33.158650300440975,
+      "PctIncMSE_SD": 0.19572655115987614,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "count.stolen.small.pads.ag",
+      "PctIncMSE": 31.874414126443067,
+      "PctIncMSE_SD": 0.36148508650128985,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "count.stolen.big.pads.ag",
+      "PctIncMSE": 29.446302614640313,
+      "PctIncMSE_SD": 0.09907706438993369,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "true.wastage",
+      "PctIncMSE": 28.59397361337692,
+      "PctIncMSE_SD": 1.507208951733416,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "percentage.on.ground",
+      "PctIncMSE": 28.32152550165899,
+      "PctIncMSE_SD": 0.8362497714610564,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "count.powerslide.ag",
+      "PctIncMSE": 24.757326264682447,
+      "PctIncMSE_SD": 0.5879337236810711,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "amount.overfill.total.ag",
+      "PctIncMSE": 24.608308034010665,
+      "PctIncMSE_SD": 0.05375590053201548,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "count.collected.big.pads.ag",
+      "PctIncMSE": 24.033578299573108,
+      "PctIncMSE_SD": 0.05508966255128446,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "amount.overfill.stolen.ag",
+      "PctIncMSE": 23.985264116859106,
+      "PctIncMSE_SD": 0.1625025848129274,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "real.speed.ag",
+      "PctIncMSE": 23.890274441874617,
+      "PctIncMSE_SD": 0.5153326780901403,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "percentage.supersonic.speed",
+      "PctIncMSE": 23.256542741763077,
+      "PctIncMSE_SD": 0.04079823574094081,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "0.boost.time.ag",
+      "PctIncMSE": 23.136491495029734,
+      "PctIncMSE_SD": 0.25082600976870423,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "count.collected.small.pads.ag",
+      "PctIncMSE": 21.46335646498239,
+      "PctIncMSE_SD": 0.1642372328984703,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "amount.collected.ag",
+      "PctIncMSE": 19.700747072951472,
+      "PctIncMSE_SD": 0.09922249861641017,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "Boost.used.ag",
+      "PctIncMSE": 19.08964406214897,
+      "PctIncMSE_SD": 0.42279102554479053,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "avg.powerslide.time",
+      "PctIncMSE": 19.080292670558162,
+      "PctIncMSE_SD": 0.022691470362983062,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "percentage.slow.speed",
+      "PctIncMSE": 18.788524940348367,
+      "PctIncMSE_SD": 0.35815708190647944,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "demos.inflicted.ag",
+      "PctIncMSE": 9.055389423009204,
+      "PctIncMSE_SD": 0.06255424914888887,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_bronze",
+      "Feature": "demos.taken.ag",
+      "PctIncMSE": 8.879045380725879,
+      "PctIncMSE_SD": 0.05332141019350125,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "shots.conceded.ag",
+      "PctIncMSE": 1474.5076410202514,
+      "PctIncMSE_SD": 8.879353010095576,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "shots.ag",
+      "PctIncMSE": 867.7122222993937,
+      "PctIncMSE_SD": 12.55320479060637,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "percentage.behind.ball",
+      "PctIncMSE": 842.4192711294071,
+      "PctIncMSE_SD": 0.7341960004977519,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "saves.ag",
+      "PctIncMSE": 302.6863937679123,
+      "PctIncMSE_SD": 1.9272528916854108,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "percentage.offensive.third",
+      "PctIncMSE": 75.31372002623986,
+      "PctIncMSE_SD": 1.3133652832927312,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "percentage.defensive.third",
+      "PctIncMSE": 66.30914284431158,
+      "PctIncMSE_SD": 0.45254365187252077,
+      "p_value": 0.45454545454545453,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "avg.boost.amount",
+      "PctIncMSE": 37.81415976713511,
+      "PctIncMSE_SD": 0.6866022701199916,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "percentage.high.in.air",
+      "PctIncMSE": 35.84606226566426,
+      "PctIncMSE_SD": 0.3421123743210491,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "count.stolen.small.pads.ag",
+      "PctIncMSE": 35.02903449636256,
+      "PctIncMSE_SD": 0.43920089507483717,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "0.boost.time.ag",
+      "PctIncMSE": 32.37958882599384,
+      "PctIncMSE_SD": 0.09304736409620684,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "100.boost.time.ag",
+      "PctIncMSE": 31.627588127786883,
+      "PctIncMSE_SD": 0.5616702459784845,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "true.wastage",
+      "PctIncMSE": 30.914642314462764,
+      "PctIncMSE_SD": 0.037530871020438,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "percentage.on.ground",
+      "PctIncMSE": 30.365403754806774,
+      "PctIncMSE_SD": 0.0009100856439833507,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "real.speed.ag",
+      "PctIncMSE": 29.399298177123157,
+      "PctIncMSE_SD": 0.10731372587344465,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "amount.stolen.ag",
+      "PctIncMSE": 29.15502917562014,
+      "PctIncMSE_SD": 0.6695213704347379,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "count.collected.small.pads.ag",
+      "PctIncMSE": 27.435821241060037,
+      "PctIncMSE_SD": 0.1851771171010581,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "count.powerslide.ag",
+      "PctIncMSE": 25.495881801775894,
+      "PctIncMSE_SD": 0.1821121587173506,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "amount.overfill.total.ag",
+      "PctIncMSE": 25.016153939402606,
+      "PctIncMSE_SD": 0.2762394199573731,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "count.stolen.big.pads.ag",
+      "PctIncMSE": 24.528828194763573,
+      "PctIncMSE_SD": 0.5872615848839645,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "amount.overfill.stolen.ag",
+      "PctIncMSE": 23.867310574064163,
+      "PctIncMSE_SD": 0.5320837695875364,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "percentage.slow.speed",
+      "PctIncMSE": 22.781121504916058,
+      "PctIncMSE_SD": 0.04000999572908303,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "percentage.supersonic.speed",
+      "PctIncMSE": 22.704496912550688,
+      "PctIncMSE_SD": 0.16540399328395627,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "count.collected.big.pads.ag",
+      "PctIncMSE": 21.211955047368704,
+      "PctIncMSE_SD": 0.030156370497259204,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "Boost.used.ag",
+      "PctIncMSE": 20.944642876619998,
+      "PctIncMSE_SD": 0.12901811373014674,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "amount.collected.ag",
+      "PctIncMSE": 20.309170155560192,
+      "PctIncMSE_SD": 0.15045367375266858,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "demos.taken.ag",
+      "PctIncMSE": 19.239529625997378,
+      "PctIncMSE_SD": 0.14588331960433473,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "demos.inflicted.ag",
+      "PctIncMSE": 18.531411076820707,
+      "PctIncMSE_SD": 0.03230816477271905,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gold",
+      "Feature": "avg.powerslide.time",
+      "PctIncMSE": 17.084874106203,
+      "PctIncMSE_SD": 0.12489947139065644,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "percentage.behind.ball",
+      "PctIncMSE": 1165.0737849951608,
+      "PctIncMSE_SD": 16.30955533267415,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "shots.conceded.ag",
+      "PctIncMSE": 1084.6486892722064,
+      "PctIncMSE_SD": 7.326956073691464,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "shots.ag",
+      "PctIncMSE": 823.4817378932627,
+      "PctIncMSE_SD": 7.113971633498335,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "saves.ag",
+      "PctIncMSE": 265.6514733817668,
+      "PctIncMSE_SD": 1.4179454121718482,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "percentage.defensive.third",
+      "PctIncMSE": 77.52581620686705,
+      "PctIncMSE_SD": 0.285257864843329,
+      "p_value": 0.18181818181818182,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "percentage.offensive.third",
+      "PctIncMSE": 64.71210948144179,
+      "PctIncMSE_SD": 0.3228600649557073,
+      "p_value": 0.45454545454545453,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "percentage.high.in.air",
+      "PctIncMSE": 44.8349931588795,
+      "PctIncMSE_SD": 0.009648654987446284,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "demos.inflicted.ag",
+      "PctIncMSE": 39.916639869228334,
+      "PctIncMSE_SD": 0.37222382899829937,
+      "p_value": 0.45454545454545453,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "0.boost.time.ag",
+      "PctIncMSE": 37.55585639248588,
+      "PctIncMSE_SD": 0.16604516717640688,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "avg.boost.amount",
+      "PctIncMSE": 34.84517009764814,
+      "PctIncMSE_SD": 0.45219672866213784,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "count.stolen.small.pads.ag",
+      "PctIncMSE": 33.42361597334003,
+      "PctIncMSE_SD": 0.24830150488301608,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "100.boost.time.ag",
+      "PctIncMSE": 31.389442452023292,
+      "PctIncMSE_SD": 0.28227515192716335,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "amount.stolen.ag",
+      "PctIncMSE": 30.049230038291352,
+      "PctIncMSE_SD": 0.40072931797355577,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "percentage.on.ground",
+      "PctIncMSE": 29.71444700573095,
+      "PctIncMSE_SD": 0.05107414146925249,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "amount.overfill.stolen.ag",
+      "PctIncMSE": 28.195216384812422,
+      "PctIncMSE_SD": 0.49095802545272527,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "real.speed.ag",
+      "PctIncMSE": 28.016452277328785,
+      "PctIncMSE_SD": 0.4195992193830619,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "amount.overfill.total.ag",
+      "PctIncMSE": 26.54499080782215,
+      "PctIncMSE_SD": 0.0013972285496648164,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "count.collected.small.pads.ag",
+      "PctIncMSE": 26.368026080887724,
+      "PctIncMSE_SD": 0.02083543192324738,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "true.wastage",
+      "PctIncMSE": 25.712759139138065,
+      "PctIncMSE_SD": 0.06225124530989937,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "count.stolen.big.pads.ag",
+      "PctIncMSE": 24.153052308097152,
+      "PctIncMSE_SD": 0.20888412994336086,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "percentage.slow.speed",
+      "PctIncMSE": 23.093629133836274,
+      "PctIncMSE_SD": 0.013504808770012467,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "percentage.supersonic.speed",
+      "PctIncMSE": 22.505512643931684,
+      "PctIncMSE_SD": 0.22023537808080024,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "count.collected.big.pads.ag",
+      "PctIncMSE": 21.818019223072707,
+      "PctIncMSE_SD": 0.040081518249263474,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "amount.collected.ag",
+      "PctIncMSE": 21.728211232299802,
+      "PctIncMSE_SD": 0.07884473487361557,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "count.powerslide.ag",
+      "PctIncMSE": 21.719868859755636,
+      "PctIncMSE_SD": 0.07809930143754447,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "Boost.used.ag",
+      "PctIncMSE": 20.163365015161023,
+      "PctIncMSE_SD": 0.03695603791191605,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "demos.taken.ag",
+      "PctIncMSE": 18.893507485850787,
+      "PctIncMSE_SD": 0.05209902016711941,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_diamond",
+      "Feature": "avg.powerslide.time",
+      "PctIncMSE": 14.446162106198917,
+      "PctIncMSE_SD": 0.12445418332422094,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "percentage.behind.ball",
+      "PctIncMSE": 1349.9493055398086,
+      "PctIncMSE_SD": 3.3150824152869416,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "shots.conceded.ag",
+      "PctIncMSE": 944.8036055291185,
+      "PctIncMSE_SD": 7.045629440357236,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "shots.ag",
+      "PctIncMSE": 640.1351980193084,
+      "PctIncMSE_SD": 1.3454228491919231,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "saves.ag",
+      "PctIncMSE": 207.20270989952962,
+      "PctIncMSE_SD": 1.7341104426796243,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "percentage.defensive.third",
+      "PctIncMSE": 70.9027315593686,
+      "PctIncMSE_SD": 0.26728840263272613,
+      "p_value": 0.18181818181818182,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "percentage.offensive.third",
+      "PctIncMSE": 61.66799127334015,
+      "PctIncMSE_SD": 0.39005309094761337,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "percentage.on.ground",
+      "PctIncMSE": 49.753416268988104,
+      "PctIncMSE_SD": 0.3292445690048716,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "demos.inflicted.ag",
+      "PctIncMSE": 46.5090288231803,
+      "PctIncMSE_SD": 1.2816210543120437,
+      "p_value": 0.2727272727272727,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "amount.stolen.ag",
+      "PctIncMSE": 34.31441495680461,
+      "PctIncMSE_SD": 0.5268862241143739,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "count.stolen.small.pads.ag",
+      "PctIncMSE": 33.550516319672965,
+      "PctIncMSE_SD": 0.99182206614887,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "avg.boost.amount",
+      "PctIncMSE": 33.22955934955685,
+      "PctIncMSE_SD": 0.5618317407458728,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "percentage.high.in.air",
+      "PctIncMSE": 31.06927742223997,
+      "PctIncMSE_SD": 0.09334452055172882,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "0.boost.time.ag",
+      "PctIncMSE": 28.828145064865602,
+      "PctIncMSE_SD": 0.08420108256376832,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "count.stolen.big.pads.ag",
+      "PctIncMSE": 27.443005177823114,
+      "PctIncMSE_SD": 0.24506474688624477,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "amount.overfill.stolen.ag",
+      "PctIncMSE": 26.575553214767712,
+      "PctIncMSE_SD": 0.5884280715357131,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "100.boost.time.ag",
+      "PctIncMSE": 25.6109392508644,
+      "PctIncMSE_SD": 0.49004173899582626,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "true.wastage",
+      "PctIncMSE": 24.85223930635316,
+      "PctIncMSE_SD": 0.3780067330202857,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "count.collected.small.pads.ag",
+      "PctIncMSE": 24.78272242503964,
+      "PctIncMSE_SD": 0.3009265106424419,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "percentage.slow.speed",
+      "PctIncMSE": 24.682931857102894,
+      "PctIncMSE_SD": 0.10234064605347008,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "count.collected.big.pads.ag",
+      "PctIncMSE": 23.61966042676471,
+      "PctIncMSE_SD": 0.03020369411195127,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "demos.taken.ag",
+      "PctIncMSE": 23.215405080602252,
+      "PctIncMSE_SD": 0.08535821755562803,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "percentage.supersonic.speed",
+      "PctIncMSE": 23.049971125565143,
+      "PctIncMSE_SD": 0.2006612576817948,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "amount.overfill.total.ag",
+      "PctIncMSE": 22.83366762989856,
+      "PctIncMSE_SD": 0.27583385030405716,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "amount.collected.ag",
+      "PctIncMSE": 22.61880443829472,
+      "PctIncMSE_SD": 0.3231041133373407,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "count.powerslide.ag",
+      "PctIncMSE": 22.375627440229017,
+      "PctIncMSE_SD": 0.5007153935267187,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "Boost.used.ag",
+      "PctIncMSE": 21.43164727536469,
+      "PctIncMSE_SD": 0.10745479522899327,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "raw_gc",
+      "Feature": "avg.powerslide.time",
+      "PctIncMSE": 13.345674826514106,
+      "PctIncMSE_SD": 0.11661592246456295,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.shots.ag",
+      "PctIncMSE": 3954.5580879411004,
+      "PctIncMSE_SD": 7.821875461560886,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.percentage.behind.ball.ag",
+      "PctIncMSE": 1840.358842950046,
+      "PctIncMSE_SD": 13.436738685887176,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.saves.ag",
+      "PctIncMSE": 856.9732734793914,
+      "PctIncMSE_SD": 5.949916995688423,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.percentage.offensive.third.ag",
+      "PctIncMSE": 127.08114496091609,
+      "PctIncMSE_SD": 0.06147836411775234,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.percentage.defensive.third.ag",
+      "PctIncMSE": 122.7834264528542,
+      "PctIncMSE_SD": 1.1290087543427882,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.percentage.high.in.air.ag",
+      "PctIncMSE": 85.1759172907889,
+      "PctIncMSE_SD": 0.5335994030006427,
+      "p_value": 0.2727272727272727,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.avg.boost.amount.ag",
+      "PctIncMSE": 59.72022608133748,
+      "PctIncMSE_SD": 0.5289778018236527,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.count.stolen.small.pads.ag",
+      "PctIncMSE": 56.23663281643792,
+      "PctIncMSE_SD": 0.026826468726539168,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.0.boost.time.ag",
+      "PctIncMSE": 53.364228365535524,
+      "PctIncMSE_SD": 0.07434826213971948,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.demos.inflicted.ag",
+      "PctIncMSE": 52.55607807111684,
+      "PctIncMSE_SD": 0.4575811492689396,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.amount.stolen.ag",
+      "PctIncMSE": 51.49119080590259,
+      "PctIncMSE_SD": 0.17509525216794358,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.real.speed.ag",
+      "PctIncMSE": 44.38793795365299,
+      "PctIncMSE_SD": 0.11561474145428345,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.percentage.on.ground.ag",
+      "PctIncMSE": 35.06268283208447,
+      "PctIncMSE_SD": 0.033372135172708005,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.count.stolen.big.pads.ag",
+      "PctIncMSE": 34.1296645870441,
+      "PctIncMSE_SD": 0.05370998439700799,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.count.collected.small.pads.ag",
+      "PctIncMSE": 29.60620890338574,
+      "PctIncMSE_SD": 0.15336524400740295,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.percentage.slow.speed.ag",
+      "PctIncMSE": 28.21954225838666,
+      "PctIncMSE_SD": 0.006797422902007539,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.percentage.supersonic.speed.ag",
+      "PctIncMSE": 27.497957139810946,
+      "PctIncMSE_SD": 0.06315787694764773,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.amount.overfill.stolen.ag",
+      "PctIncMSE": 27.344392924624124,
+      "PctIncMSE_SD": 0.16644176293485008,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.amount.collected.ag",
+      "PctIncMSE": 27.28014560193665,
+      "PctIncMSE_SD": 0.09552150830263133,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.true.wastage",
+      "PctIncMSE": 27.049039770195616,
+      "PctIncMSE_SD": 0.14883515776812017,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.100.boost.time.ag",
+      "PctIncMSE": 27.004721737819843,
+      "PctIncMSE_SD": 0.04261330047916197,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.count.collected.big.pads.ag",
+      "PctIncMSE": 26.445660288744556,
+      "PctIncMSE_SD": 0.12196160384038462,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.amount.overfill.total.ag",
+      "PctIncMSE": 26.394649913892493,
+      "PctIncMSE_SD": 0.2353095260072533,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.count.powerslide.ag",
+      "PctIncMSE": 26.23128583007526,
+      "PctIncMSE_SD": 0.07087591281272557,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.Boost.used.ag",
+      "PctIncMSE": 24.96348212791819,
+      "PctIncMSE_SD": 0.02082049953825506,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_allranks",
+      "Feature": "diff.avg.powerslide.time.ag",
+      "PctIncMSE": 20.134043495892627,
+      "PctIncMSE_SD": 0.13067391046408744,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.shots.ag",
+      "PctIncMSE": 3071.4798525499427,
+      "PctIncMSE_SD": 19.52241562360597,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.percentage.behind.ball.ag",
+      "PctIncMSE": 1475.0420026974518,
+      "PctIncMSE_SD": 34.382664330373814,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.saves.ag",
+      "PctIncMSE": 300.87128933115264,
+      "PctIncMSE_SD": 3.6143234683087693,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.percentage.offensive.third.ag",
+      "PctIncMSE": 113.28618372218568,
+      "PctIncMSE_SD": 3.303078506181661,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.percentage.defensive.third.ag",
+      "PctIncMSE": 76.54843983172452,
+      "PctIncMSE_SD": 1.3575524579733018,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.percentage.high.in.air.ag",
+      "PctIncMSE": 73.96171967319724,
+      "PctIncMSE_SD": 0.12967275670505476,
+      "p_value": 0.18181818181818182,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.avg.boost.amount.ag",
+      "PctIncMSE": 64.82984912932194,
+      "PctIncMSE_SD": 1.8386573201557355,
+      "p_value": 0.2727272727272727,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.count.stolen.small.pads.ag",
+      "PctIncMSE": 42.30167490981354,
+      "PctIncMSE_SD": 0.05685243712771788,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.amount.stolen.ag",
+      "PctIncMSE": 39.70690150815588,
+      "PctIncMSE_SD": 0.6230022388510551,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.count.powerslide.ag",
+      "PctIncMSE": 37.761058391538946,
+      "PctIncMSE_SD": 0.6175284084290584,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.0.boost.time.ag",
+      "PctIncMSE": 32.83824761705118,
+      "PctIncMSE_SD": 1.1193575647911287,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.count.collected.big.pads.ag",
+      "PctIncMSE": 31.680142041164427,
+      "PctIncMSE_SD": 0.09438011394638304,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.real.speed.ag",
+      "PctIncMSE": 28.17961773065747,
+      "PctIncMSE_SD": 0.2692277051473996,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.percentage.supersonic.speed.ag",
+      "PctIncMSE": 26.435020197293834,
+      "PctIncMSE_SD": 0.0374248055725289,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.amount.collected.ag",
+      "PctIncMSE": 26.174564527636722,
+      "PctIncMSE_SD": 0.015417158876536946,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.count.stolen.big.pads.ag",
+      "PctIncMSE": 26.005096969306766,
+      "PctIncMSE_SD": 0.4154655974866894,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.true.wastage",
+      "PctIncMSE": 24.951518504526753,
+      "PctIncMSE_SD": 0.09399876457108018,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.percentage.on.ground.ag",
+      "PctIncMSE": 24.32763252416587,
+      "PctIncMSE_SD": 0.011312499681842059,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.amount.overfill.total.ag",
+      "PctIncMSE": 23.860524990243963,
+      "PctIncMSE_SD": 0.17012628724041182,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.percentage.slow.speed.ag",
+      "PctIncMSE": 23.419544189173983,
+      "PctIncMSE_SD": 0.3517085651520366,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.Boost.used.ag",
+      "PctIncMSE": 21.575017687275718,
+      "PctIncMSE_SD": 0.5973888976113593,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.count.collected.small.pads.ag",
+      "PctIncMSE": 21.152986621377018,
+      "PctIncMSE_SD": 0.28601480205493585,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.100.boost.time.ag",
+      "PctIncMSE": 21.112028012277094,
+      "PctIncMSE_SD": 0.3093719478424696,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.avg.powerslide.time.ag",
+      "PctIncMSE": 20.064083470420396,
+      "PctIncMSE_SD": 0.16207413264673395,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.amount.overfill.stolen.ag",
+      "PctIncMSE": 18.862502203164336,
+      "PctIncMSE_SD": 0.3296457572610008,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_bronze",
+      "Feature": "diff.demos.inflicted.ag",
+      "PctIncMSE": 14.57563593902056,
+      "PctIncMSE_SD": 0.4694722219662404,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.shots.ag",
+      "PctIncMSE": 3652.699484019283,
+      "PctIncMSE_SD": 14.068622067678948,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.percentage.behind.ball.ag",
+      "PctIncMSE": 1359.656844838054,
+      "PctIncMSE_SD": 7.289887529912472,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.saves.ag",
+      "PctIncMSE": 635.2879394139728,
+      "PctIncMSE_SD": 5.950658559099338,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.percentage.offensive.third.ag",
+      "PctIncMSE": 109.82034158205782,
+      "PctIncMSE_SD": 2.548802091168943,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.percentage.defensive.third.ag",
+      "PctIncMSE": 99.08929261806648,
+      "PctIncMSE_SD": 0.5233112078902802,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.percentage.high.in.air.ag",
+      "PctIncMSE": 79.1501258018718,
+      "PctIncMSE_SD": 0.4483620848307974,
+      "p_value": 0.2727272727272727,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.count.stolen.small.pads.ag",
+      "PctIncMSE": 50.416320121622384,
+      "PctIncMSE_SD": 0.17331255170512794,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.amount.stolen.ag",
+      "PctIncMSE": 47.21767484189668,
+      "PctIncMSE_SD": 0.27786715993121036,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.avg.boost.amount.ag",
+      "PctIncMSE": 45.21186033094415,
+      "PctIncMSE_SD": 0.662052980644936,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.0.boost.time.ag",
+      "PctIncMSE": 43.75383132847237,
+      "PctIncMSE_SD": 0.6234613061582427,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.real.speed.ag",
+      "PctIncMSE": 36.554158290446146,
+      "PctIncMSE_SD": 0.27495945430135876,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.count.collected.small.pads.ag",
+      "PctIncMSE": 33.46425604978162,
+      "PctIncMSE_SD": 0.22446437572660435,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.count.stolen.big.pads.ag",
+      "PctIncMSE": 32.43441721591336,
+      "PctIncMSE_SD": 0.11437293700990675,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.true.wastage",
+      "PctIncMSE": 31.67833691063081,
+      "PctIncMSE_SD": 0.07955489445165645,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.percentage.on.ground.ag",
+      "PctIncMSE": 31.06814103970078,
+      "PctIncMSE_SD": 0.5188814938495159,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.demos.inflicted.ag",
+      "PctIncMSE": 30.44892303775249,
+      "PctIncMSE_SD": 0.37233703030723336,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.percentage.slow.speed.ag",
+      "PctIncMSE": 28.72083159633728,
+      "PctIncMSE_SD": 0.0342774948622464,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.count.powerslide.ag",
+      "PctIncMSE": 26.600919335421498,
+      "PctIncMSE_SD": 0.09492258143072335,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.percentage.supersonic.speed.ag",
+      "PctIncMSE": 25.8514376175979,
+      "PctIncMSE_SD": 0.3020848558786891,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.amount.collected.ag",
+      "PctIncMSE": 25.341147847446393,
+      "PctIncMSE_SD": 0.2975244083089748,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.amount.overfill.stolen.ag",
+      "PctIncMSE": 25.166166026588527,
+      "PctIncMSE_SD": 0.4292548658528566,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.Boost.used.ag",
+      "PctIncMSE": 24.688637311608062,
+      "PctIncMSE_SD": 0.24260919938072115,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.100.boost.time.ag",
+      "PctIncMSE": 24.021430200812446,
+      "PctIncMSE_SD": 0.17811335255798788,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.count.collected.big.pads.ag",
+      "PctIncMSE": 23.83398603568732,
+      "PctIncMSE_SD": 0.11843091076347713,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.amount.overfill.total.ag",
+      "PctIncMSE": 23.384959115685255,
+      "PctIncMSE_SD": 0.16288715233055692,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gold",
+      "Feature": "diff.avg.powerslide.time.ag",
+      "PctIncMSE": 20.840508214225018,
+      "PctIncMSE_SD": 0.2577398997663111,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.shots.ag",
+      "PctIncMSE": 3075.8163312310044,
+      "PctIncMSE_SD": 24.762066070682522,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.percentage.behind.ball.ag",
+      "PctIncMSE": 1970.0319559177015,
+      "PctIncMSE_SD": 1.0243816713809275,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.saves.ag",
+      "PctIncMSE": 631.8857394251936,
+      "PctIncMSE_SD": 2.552352511216579,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.percentage.offensive.third.ag",
+      "PctIncMSE": 112.24623357874633,
+      "PctIncMSE_SD": 0.3148249121254,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.percentage.defensive.third.ag",
+      "PctIncMSE": 97.34321906901715,
+      "PctIncMSE_SD": 0.7871795872752554,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.percentage.high.in.air.ag",
+      "PctIncMSE": 61.924021990560696,
+      "PctIncMSE_SD": 0.08664041890939549,
+      "p_value": 0.7272727272727273,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.0.boost.time.ag",
+      "PctIncMSE": 51.46859851338945,
+      "PctIncMSE_SD": 0.22921492386554226,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.demos.inflicted.ag",
+      "PctIncMSE": 50.310992782318685,
+      "PctIncMSE_SD": 1.0144533968397254,
+      "p_value": 0.45454545454545453,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.avg.boost.amount.ag",
+      "PctIncMSE": 47.94104411806327,
+      "PctIncMSE_SD": 0.1589462517681733,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.count.stolen.small.pads.ag",
+      "PctIncMSE": 45.54048083177988,
+      "PctIncMSE_SD": 0.17123660069041535,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.amount.stolen.ag",
+      "PctIncMSE": 41.56697371050761,
+      "PctIncMSE_SD": 0.495417317820379,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.amount.overfill.total.ag",
+      "PctIncMSE": 32.34993416452628,
+      "PctIncMSE_SD": 0.17778489673093653,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.real.speed.ag",
+      "PctIncMSE": 32.155520967047366,
+      "PctIncMSE_SD": 0.39017032439181615,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.percentage.on.ground.ag",
+      "PctIncMSE": 29.14961242711455,
+      "PctIncMSE_SD": 0.1638482282196018,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.count.stolen.big.pads.ag",
+      "PctIncMSE": 29.003799783772426,
+      "PctIncMSE_SD": 0.149543574872427,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.100.boost.time.ag",
+      "PctIncMSE": 27.83246153508014,
+      "PctIncMSE_SD": 0.012633822757791196,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.count.collected.small.pads.ag",
+      "PctIncMSE": 26.624253492658738,
+      "PctIncMSE_SD": 0.36225135410211373,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.amount.overfill.stolen.ag",
+      "PctIncMSE": 24.81256102996473,
+      "PctIncMSE_SD": 0.12381746464765633,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.percentage.supersonic.speed.ag",
+      "PctIncMSE": 24.727918608027004,
+      "PctIncMSE_SD": 0.11785463023212517,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.percentage.slow.speed.ag",
+      "PctIncMSE": 24.307236868137608,
+      "PctIncMSE_SD": 0.07848814819808153,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.count.powerslide.ag",
+      "PctIncMSE": 23.989830087766375,
+      "PctIncMSE_SD": 0.24415262134606466,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.true.wastage",
+      "PctIncMSE": 22.3930647481186,
+      "PctIncMSE_SD": 0.07149532572212151,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.amount.collected.ag",
+      "PctIncMSE": 22.035598522009302,
+      "PctIncMSE_SD": 0.03952334547043998,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.Boost.used.ag",
+      "PctIncMSE": 21.11427544343077,
+      "PctIncMSE_SD": 0.00226037373053666,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.count.collected.big.pads.ag",
+      "PctIncMSE": 20.270556217482998,
+      "PctIncMSE_SD": 0.06061608298497126,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_diamond",
+      "Feature": "diff.avg.powerslide.time.ag",
+      "PctIncMSE": 17.227443297788536,
+      "PctIncMSE_SD": 0.02770935088425717,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.shots.ag",
+      "PctIncMSE": 2399.298822062108,
+      "PctIncMSE_SD": 12.085053332086087,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.percentage.behind.ball.ag",
+      "PctIncMSE": 2255.538981926612,
+      "PctIncMSE_SD": 26.928790971001536,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.saves.ag",
+      "PctIncMSE": 496.5618402270202,
+      "PctIncMSE_SD": 3.7386322485353243,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.percentage.offensive.third.ag",
+      "PctIncMSE": 116.89402501313255,
+      "PctIncMSE_SD": 1.8612781655918693,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.percentage.defensive.third.ag",
+      "PctIncMSE": 88.64532988791764,
+      "PctIncMSE_SD": 1.0509436109544408,
+      "p_value": 0.09090909090909091,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.0.boost.time.ag",
+      "PctIncMSE": 60.03319871210914,
+      "PctIncMSE_SD": 0.15057395632939546,
+      "p_value": 0.7272727272727273,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.demos.inflicted.ag",
+      "PctIncMSE": 50.23977127365213,
+      "PctIncMSE_SD": 0.17476945102603797,
+      "p_value": 0.5454545454545454,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.avg.boost.amount.ag",
+      "PctIncMSE": 44.52154640853199,
+      "PctIncMSE_SD": 0.15520149167346434,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.amount.stolen.ag",
+      "PctIncMSE": 41.130837004565144,
+      "PctIncMSE_SD": 0.8853403015019544,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.count.stolen.small.pads.ag",
+      "PctIncMSE": 39.081070619700995,
+      "PctIncMSE_SD": 0.7641287624287503,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.real.speed.ag",
+      "PctIncMSE": 38.60571658931829,
+      "PctIncMSE_SD": 0.2870517789423,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.percentage.high.in.air.ag",
+      "PctIncMSE": 36.79488290555151,
+      "PctIncMSE_SD": 0.05534405333641564,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.percentage.on.ground.ag",
+      "PctIncMSE": 32.74907100549429,
+      "PctIncMSE_SD": 0.24048857090117662,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.count.stolen.big.pads.ag",
+      "PctIncMSE": 32.29871782040779,
+      "PctIncMSE_SD": 0.006039657721042487,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.percentage.slow.speed.ag",
+      "PctIncMSE": 27.16064820475037,
+      "PctIncMSE_SD": 0.1628953893755114,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.true.wastage",
+      "PctIncMSE": 25.278374039234393,
+      "PctIncMSE_SD": 0.15054039256606513,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.amount.overfill.stolen.ag",
+      "PctIncMSE": 24.099662464990438,
+      "PctIncMSE_SD": 0.24354312479126342,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.100.boost.time.ag",
+      "PctIncMSE": 24.099489183149185,
+      "PctIncMSE_SD": 0.371019300485831,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.amount.collected.ag",
+      "PctIncMSE": 23.993109813197247,
+      "PctIncMSE_SD": 0.22339236481361818,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.count.powerslide.ag",
+      "PctIncMSE": 23.025958896569694,
+      "PctIncMSE_SD": 0.005193548715148853,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.Boost.used.ag",
+      "PctIncMSE": 22.74932556722675,
+      "PctIncMSE_SD": 0.261561218631037,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.percentage.supersonic.speed.ag",
+      "PctIncMSE": 22.7040341248891,
+      "PctIncMSE_SD": 0.06351343516331975,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.count.collected.small.pads.ag",
+      "PctIncMSE": 22.182882604455962,
+      "PctIncMSE_SD": 0.13240382091584438,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.count.collected.big.pads.ag",
+      "PctIncMSE": 21.570025919754645,
+      "PctIncMSE_SD": 0.22978355056540228,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.amount.overfill.total.ag",
+      "PctIncMSE": 19.735587564819042,
+      "PctIncMSE_SD": 0.057256831870783245,
+      "p_value": 1.0,
+      "Significant": false
+    },
+    {
+      "Dataset": "diff_gc",
+      "Feature": "diff.avg.powerslide.time.ag",
+      "PctIncMSE": 15.122534187123811,
+      "PctIncMSE_SD": 0.24234123077394926,
+      "p_value": 1.0,
+      "Significant": false
+    }
+  ],
+  "datasets": {}
+}
