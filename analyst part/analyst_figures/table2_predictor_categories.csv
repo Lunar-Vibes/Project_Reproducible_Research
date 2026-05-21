@@ -1,0 +1,29 @@
+category,paper_label,raw_column,raw_only
+Boost,Average boost reserve,avg.boost.amount,No
+Boost,Boost used,Boost.used.ag,No
+Boost,Count boost collected from big pads,count.collected.big.pads.ag,No
+Boost,Count boost collected from small pads,count.collected.small.pads.ag,No
+Boost,Count boost stolen from big pads,count.stolen.big.pads.ag,No
+Boost,Count boost stolen from small pads,count.stolen.small.pads.ag,No
+Boost,Time spent at 0 boost,0.boost.time.ag,No
+Boost,Time spent at 100 boost,100.boost.time.ag,No
+Boost,Total boost collected,amount.collected.ag,No
+Boost,Total boost overfill collected,amount.overfill.total.ag,No
+Boost,Total boost overfill stolen,amount.overfill.stolen.ag,No
+Boost,Total boost stolen,amount.stolen.ag,No
+Boost,True boost wastage (%),true.wastage,No
+Movement,Average duration for a powerslide,avg.powerslide.time,No
+Movement,Average speed,real.speed.ag,No
+Movement,Instances of powerslides,count.powerslide.ag,No
+Movement,"Time spent at ""slow speed""",percentage.slow.speed,No
+Movement,"Time spent at ""supersonic speed""",percentage.supersonic.speed,No
+Offense/defense,Demos inflicted,demos.inflicted.ag,No
+Offense/defense,Demos taken,demos.taken.ag,Yes
+Offense/defense,Saves made,saves.ag,No
+Offense/defense,Shots conceded,shots.conceded.ag,Yes
+Offense/defense,Shots taken,shots.ag,No
+Positioning,Time spent goalside of the ball,percentage.behind.ball,No
+Positioning,Time spent high in the air,percentage.high.in.air,No
+Positioning,Time spent in the defensive third,percentage.defensive.third,No
+Positioning,Time spent in the offensive third,percentage.offensive.third,No
+Positioning,Time spent on the ground,percentage.on.ground,No
