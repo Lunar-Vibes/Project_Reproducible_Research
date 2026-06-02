@@ -1,0 +1,6 @@
+{
+  "dataset": "diff_diamond",
+  "n_features": 26,
+  "n_significant_p05": 11,
+  "mean_pct_inc_mse": 15.214621882968931
+}

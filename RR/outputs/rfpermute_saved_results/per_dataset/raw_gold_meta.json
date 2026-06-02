@@ -1,0 +1,6 @@
+{
+  "dataset": "raw_gold",
+  "n_features": 28,
+  "n_significant_p05": 14,
+  "mean_pct_inc_mse": 7.279045057961988
+}

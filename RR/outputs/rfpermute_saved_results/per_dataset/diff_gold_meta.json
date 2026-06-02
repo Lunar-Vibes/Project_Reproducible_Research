@@ -1,0 +1,6 @@
+{
+  "dataset": "diff_gold",
+  "n_features": 26,
+  "n_significant_p05": 16,
+  "mean_pct_inc_mse": 15.348808268985419
+}

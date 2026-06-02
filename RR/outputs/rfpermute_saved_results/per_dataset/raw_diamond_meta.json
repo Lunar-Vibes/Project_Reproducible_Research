@@ -1,0 +1,6 @@
+{
+  "dataset": "raw_diamond",
+  "n_features": 28,
+  "n_significant_p05": 19,
+  "mean_pct_inc_mse": 6.859357776395077
+}

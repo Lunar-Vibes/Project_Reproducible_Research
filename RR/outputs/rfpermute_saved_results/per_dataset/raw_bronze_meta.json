@@ -1,0 +1,6 @@
+{
+  "dataset": "raw_bronze",
+  "n_features": 28,
+  "n_significant_p05": 20,
+  "mean_pct_inc_mse": 8.948341907441407
+}

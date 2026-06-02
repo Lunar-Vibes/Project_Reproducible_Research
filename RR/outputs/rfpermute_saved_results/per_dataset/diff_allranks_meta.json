@@ -1,0 +1,6 @@
+{
+  "dataset": "diff_allranks",
+  "n_features": 26,
+  "n_significant_p05": 15,
+  "mean_pct_inc_mse": 17.461784846400686
+}

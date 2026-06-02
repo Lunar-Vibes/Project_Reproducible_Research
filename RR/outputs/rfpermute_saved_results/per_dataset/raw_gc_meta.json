@@ -1,0 +1,6 @@
+{
+  "dataset": "raw_gc",
+  "n_features": 27,
+  "n_significant_p05": 14,
+  "mean_pct_inc_mse": 6.799542347002956
+}
