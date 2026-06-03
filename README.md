@@ -67,9 +67,9 @@ We found small differences from the paper's ntree values in most cases, with the
 
 | Dataset | Our ntree | Paper ntree | Our R² | Our OOB MSE |
 |---|---|---|---|---|
-| raw_allranks | 855 | 954 | 0.747 | 3.612 |
+| raw_allranks | 855 | 964 | 0.747 | 3.612 |
 | raw_bronze | 845 | 856 | 0.793 | 3.908 |
-| raw_gold | 960 | 380 | 0.743 | 3.517 |
+| raw_gold | 960 | 386 | 0.743 | 3.517 |
 | raw_diamond | 995 | 1000 | 0.725 | 3.659 |
 | raw_gc | 1000 | 1000 | 0.713 | 4.053 |
 | diff_allranks | 960 | 986 | 0.839 | 2.295 |
