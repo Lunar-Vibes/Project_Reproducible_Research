@@ -28,7 +28,17 @@ Our goal was to reproduce the paper's three analyses, all figures and tables, an
 
 
 ---
+## What We Reproduced
 
+The goal was to reproduce the original R workflow entirely in Python, which included:
+
+- Random Forest regression with rfPermute-like permutation importance and permutation-based p-values
+- QR decomposition for multicollinearity handling  
+- ntree optimisation across all 10 rank × score-type combinations
+- Random Forest classification with OOB permutation importance (Mean Decrease in Accuracy)
+- All paper figures and tables
+
+---
 ## Key Results from the Original Paper
 
 **Performance Indicators (PIs) — what predicts winning within a rank:**
@@ -44,6 +54,55 @@ Our goal was to reproduce the paper's three analyses, all figures and tables, an
 - Time spent goalside of the ball
 
 Difference-score models (player stats relative to opponent) achieved R² > 0.80 in predicting goal difference across all ranks, outperforming raw-score models in every case.
+
+---
+## Reproduction Results
+
+### Multicollinearity (QR Decomposition)
+The paper removed average speed from the GC model only. Our QR decomposition found no multicollinearity issues — no features were dropped in our reproduction.
+
+### ntree Optimisation
+
+We found small differences from the paper's ntree values in most cases, with the most noticeable divergence in `raw_allranks` (855 vs 954) and `raw_gold` (960 vs 380). To maintain comparability, we used the paper's ntree values for final model fitting.
+
+| Dataset | Our ntree | Paper ntree | Our R² | Our OOB MSE |
+|---|---|---|---|---|
+| raw_allranks | 855 | 954 | 0.747 | 3.612 |
+| raw_bronze | 845 | 856 | 0.793 | 3.908 |
+| raw_gold | 960 | 380 | 0.743 | 3.517 |
+| raw_diamond | 995 | 1000 | 0.725 | 3.659 |
+| raw_gc | 1000 | 1000 | 0.713 | 4.053 |
+| diff_allranks | 960 | 986 | 0.839 | 2.295 |
+| diff_bronze | 1000 | 961 | 0.841 | 2.991 |
+| diff_gold | 1000 | 895 | 0.822 | 2.433 |
+| diff_diamond | 995 | 989 | 0.822 | 2.366 |
+| diff_gc | 1000 | 991 | 0.815 | 2.612 |
+
+### Replicating rfPermute
+
+The original paper used the R package `rfPermute` to calculate Random Forest variable importance and attach significance values to each predictor. Since `rfPermute` has no direct Python equivalent, we reproduced it manually:
+
+1. Random Forest regression models are fitted for each dataset
+2. Feature importance is calculated using permutation importance — each predictor is shuffled and the resulting increase in OOB mean squared error is measured as `%IncMSE`
+3. Significance is estimated by building a null distribution through repeated permutation of the target variable. For each permutation, the model is refit and importance recomputed. P-values are the proportion of null scores greater than or equal to the observed score
+
+
+
+Our reproduction successfully identified the same six significant raw-score PIs reported in the paper: shots taken, shots conceded, time spent goalside of the ball, saves made, demos taken, and demos inflicted.
+
+### Classification Results
+
+For OOB accuracy, scikit-learn's `RandomForestClassifier` was used. For each tree, rows are drawn with replacement (bootstrap); the rows not selected are the OOB samples. For each OOB sample, votes are aggregated from trees that did not use it for training.
+
+| Rank | Paper | Ours | Difference |
+|---|---|---|---|
+| Bronze | 69.81% | 69.57% | −0.24 pp |
+| Gold | 74.65% | 74.77% | +0.12 pp |
+| Diamond | 70.87% | 71.14% | +0.27 pp |
+| GC | 73.61% | 73.72% | +0.11 pp |
+| **Overall** | **72.60%** | **72.72%** | **+0.12 pp** |
+
+For permutation importance, a Random Forest classification model is fitted using OOB sampling. For each predictor, values are shuffled in OOB samples and the drop in OOB accuracy is measured as Mean Decrease in Accuracy (MDA). Significance is assessed using the same null distribution approach as regression — by repeatedly permuting the class labels, refitting the model, and recomputing OOB importance.
 
 ---
 ## Repository Structure
