@@ -1,5 +1,5 @@
 
-# Project: Predicting Rocket League Outcomes using Random Forest
+# Predicting Rocket League Outcomes using Random Forest
 ### Reproducible Research Project — Smithies et al. (2021)
 
 > Smithies, T. D., Campbell, M. J., Ramsbottom, N., & Toth, A. J. (2021). A Random Forest approach to identify metrics that best predict match outcome and player ranking in the esport Rocket League. *Scientific Reports*, 11, 19285. https://doi.org/10.1038/s41598-021-98879-9
@@ -124,10 +124,6 @@ For notebooks folder:
 The instructions for the analyst part are included in the Analyst Part- Zahra Eshtiaghi folder.
 
 
-
-## Reference
-
-Smithies, T. D., Campbell, M. J., Ramsbottom, N., & Toth, A. J. (2021). A Random Forest approach to identify metrics that best predict match outcome and player ranking in the esport Rocket League. *Scientific Reports*, 11, 19285. https://doi.org/10.1038/s41598-021-98879-9
 
 
 ## Reference
