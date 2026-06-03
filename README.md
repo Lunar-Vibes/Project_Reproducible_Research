@@ -183,6 +183,16 @@ For notebooks folder:
 The instructions for the analyst part are included in the Analyst Part- Zahra Eshtiaghi folder.
 
 
+## Declaration of AI Tool Usage
+
+In alignment with academic integrity guidelines, we acknowledge the use of AI 
+assistants during the development of this project. The following tools were used:
+
+- **Claude:** README writing and formatting
+- **Gemini:** Code debugging, helping understand and fix error messages when Python code crashed during model training.
+
+The core dataset selection, machine learning implementation, and final evaluation were entirely executed and 
+verified by the team members. AI tools were used solely for supporting tasks and not for any analytical or modelling decisions.
 
 
 ## Reference
