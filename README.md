@@ -93,13 +93,14 @@ Our reproduction successfully identified the same six significant raw-score PIs 
 ### Classification Results
 
 For OOB accuracy, scikit-learn's `RandomForestClassifier` was used. For each tree, rows are drawn with replacement (bootstrap); the rows not selected are the OOB samples. For each OOB sample, votes are aggregated from trees that did not use it for training.
+| Class   | Reproduction Accuracy | Paper Accuracy | Difference (pp) |
+|---------|------------------------|----------------|-----------------|
+| GC      | 73.72%                 | 73.61%         | +0.11           |
+| bronze  | 69.57%                 | 69.81%         | -0.24           |
+| diamond | 71.14%                 | 70.87%         | +0.27           |
+| gold    | 74.77%                 | 74.65%         | +0.12           |
+| global  | 72.72%                 | 72.60%         | +0.12           |
 
-| Rank | Paper | Ours | Difference |
-|---|---|---|---|
-| Bronze | 69.81% | 69.57% | −0.24 pp |
-| Gold | 74.65% | 74.77% | +0.12 pp |
-| Diamond | 70.87% | 71.14% | +0.27 pp |
-| GC | 73.61% | 73.72% | +0.11 pp |
 | **Overall** | **72.60%** | **72.72%** | **+0.12 pp** |
 
 For permutation importance, a Random Forest classification model is fitted using OOB sampling. For each predictor, values are shuffled in OOB samples and the drop in OOB accuracy is measured as Mean Decrease in Accuracy (MDA). Significance is assessed using the same null distribution approach as regression — by repeatedly permuting the class labels, refitting the model, and recomputing OOB importance.
